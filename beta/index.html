@@ -49,7 +49,25 @@ Zhumadian, Henan China Unicom<br />
 河南驻马店&nbsp;中国联通<br />
 Service hours/服务时间：Monday to Sunday/周一至周日, 8:00-24:00(UTC+8)<br />
 
-Open the Alipay home page and search for the phone number 17503962297 to transfer money or add me as a friend.<br />
+Open the Alipay homepage and search for the contact <pre><code class="language-js">
++8617503962297
+</code></pre>
+<script>
+function addCopyButtons() {
+ document.querySelectorAll('pre code').forEach(block => {
+   const btn = document.createElement('button');
+   btn.textContent = 'Copy/复制';
+   btn.className = 'copy-btn';
+   btn.onclick = () => {
+     navigator.clipboard.writeText(block.textContent.trim())
+       .then(() => alert('Copy successful/复制成功'))
+       .catch(() => alert('Copy failed/复制失败'));
+   };
+   block.parentNode.insertBefore(btn, block);
+ });
+}
+document.addEventListener('DOMContentLoaded', addCopyButtons);
+</script> You can transfer money or add me as a friend.<br />
 
 打开支付宝首页搜索联系人，可以转账、加我为好友<br />
 </div>
